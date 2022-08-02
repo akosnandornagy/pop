@@ -17,19 +17,19 @@ function getStairsMovementDirection(stairNumber, isClimbingStairs) {
 
    if (isClimbingStairs === false) {
     if (stairNumber % 2 === 0) {
-        return "down"
+        return "down";
     }
     else {
-        return "right"   
+        return "right";
     };
    };
 
    if (isClimbingStairs === true) {
     if (stairNumber % 2 === 0) {
-        return "up"
+        return "up";
     }
     else {
-        return "right"   
+        return "right"; 
     };
    };
 };
@@ -54,31 +54,26 @@ function getZigZagMovementDirection(step) {
 };
 
 function manuallyControl(key) {
-
-    if (key === "ArrowRight") {
-        moveDirection ("right")
-        
-    }
-
-    if (key === "ArrowLeft") {
-        moveDirection ("left")
-        
-    }
-
-    if (key === "ArrowUp") {
-        moveDirection ("up")
-        
-    }
-
-    if (key === "ArrowDown") {
-        moveDirection ("down")
-        
-    }
-
     // when moving the prince using the keyboard you can call the already implemented
     // function `moveDirection` with the STRING as PARAMETER `left`, `right`, `up`, `down`.
-    console.log(`[manuallyControl] received key pressed: ${key}`)
-}
+
+    if (key === "ArrowRight") {
+        moveDirection ("right");
+    };
+
+    if (key === "ArrowLeft") {
+        moveDirection ("left");
+    };
+
+    if (key === "ArrowUp") {
+        moveDirection ("up");   
+    };
+
+    if (key === "ArrowDown") {
+        moveDirection ("down");
+    };
+    console.log(`[manuallyControl] received key pressed: ${key}`);
+};
 
 function givePotion2Answer(list) {
 
