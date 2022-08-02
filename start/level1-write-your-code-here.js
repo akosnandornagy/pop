@@ -76,5 +76,8 @@ function manuallyControl(key) {
 };
 
 function givePotion2Answer(list) {
-
-}
+    for(let i = 0; i < list.length; i++) {
+        let sum = 0 +list[i];
+        return sum;
+    };
+};
