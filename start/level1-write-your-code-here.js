@@ -8,50 +8,50 @@
 
 
 function getStairsMovementDirection(stairNumber, isClimbingStairs) {
-
-   if (isClimbingStairs === false) {
-    if (stairNumber % 2 === 0) {
-        return "down"
-    } else { return "right"
-        
-    }
-    
-   }
-
-   if (isClimbingStairs === true) {
-    if (stairNumber % 2 === 0) {
-        return "up"
-    } else { return "right"
-        
-    }
-    
-   }
-
-
-    /* Implement the function to return "left", "right", "up", "down"
+ /* Implement the function to return "left", "right", "up", "down"
        based on the values of the parameters "stairNumber" and "isClimbingStairs"
        so that prince will descend and ascend the stairs.
        HINT: to avoid writing a lot of if else, if else, if else...
        you can see if the stair number can be divided by a certain number
     */
 
-}
+   if (isClimbingStairs === false) {
+    if (stairNumber % 2 === 0) {
+        return "down"
+    }
+    else {
+        return "right"   
+    };
+   };
+
+   if (isClimbingStairs === true) {
+    if (stairNumber % 2 === 0) {
+        return "up"
+    }
+    else {
+        return "right"   
+    };
+   };
+};
+
 function getZigZagMovementDirection(step) {
-
-    if (step % 3 === 0) {
-        if (step % 2 === 0) {
-            return "up"
-         }else return "down"
-    } else { return "right"}
-
-
-    
-    /* Implement the function to return "left", "right", "up", "down"
+ /* Implement the function to return "left", "right", "up", "down"
        based on the values of the parameters "step" so that prince will reach the keyboard symbol on the map.
        HINT: to avoid writing a lot of if else, if else, if else...
        you can see if the step can be divided by a certain number for "up" and another number for "down"
     */
-}
+
+    if (step % 3 === 0) {
+        if (step % 2 === 0) {
+            return "up";
+         }
+         else {
+            return "down";
+        }
+    } else { 
+        return "right";
+    }; 
+};
 
 function manuallyControl(key) {
 
